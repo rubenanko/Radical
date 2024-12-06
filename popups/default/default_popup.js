@@ -1,1 +1,1 @@
-console.log("Raddical started")
+console.log("Radical started")
