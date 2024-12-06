@@ -14,13 +14,13 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
                 {
                     chrome.tabs.onCreated.addListener(removeTab);
                     chrome.windows.onCreated.addListener(removeWindow);
-                    chrome.action.setIcon({ path: "../images/disabled_icon_128.png"});
+                    chrome.action.setIcon({ path: "../images/enabled_icon_128.png"});
                 }
             else
             {
                 chrome.tabs.onCreated.removeListener(removeTab);
                 chrome.windows.onCreated.removeListener(removeWindow);
-                chrome.action.setIcon({ path: "../images/enabled_icon_128.png"});
+                chrome.action.setIcon({ path: "../images/disabled_icon_128.png"});
             }
         }
 
